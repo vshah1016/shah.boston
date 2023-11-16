@@ -1,33 +1,72 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Christmas Website</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Under Construction</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
     <style>
         body {
-            background-color: #eee;
-            background-image: url('assets/img/background.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
         }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: auto;
+            width: 50%;
+        }
+
         h1 {
-            text-align: center;
-            color: #f00;
+            color: #333;
+            font-size: 2.5em;
         }
-        .button {
-            display: block;
-            margin: 0 auto;
-            background-color: #dc143c;  /* Set the button background color to a beautiful Christmas red */
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;  /* Set the text color to white for good contrast */
+
+        p {
+            color: #666;
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the button */
+        button {
+            background-color: #0a58ca; /* Bootstrap primary color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0a3d62; /* Darken the color on hover */
         }
     </style>
 </head>
 <body>
-<h1>Merry Christmas!</h1>
-<button class="button" onclick="window.location.href='assets/img/puzzle.jpg'">UNWRAP YOUR PRESENT</button>
+<div class="container">
+    <img alt="Construction Graphic" class="logo" src="construction-image.png">
+    <h1>My Website is Under Construction</h1>
+    <p>We're working hard to improve our website and we'll be ready to launch soon. Thank you for your patience!</p>
+    <button id="updateButton">Check for Updates</button>
+    <p id="updateText"></p>
+</div>
+
+<script>
+    document.getElementById('updateButton').addEventListener('click', function () {
+        document.getElementById('updateText').textContent = 'We are still working hard. Check back soon!';
+    });
+</script>
 </body>
 </html>
